@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Dancing+Script:wght@400;600&family=EB+Garamond:ital@0;1&family=Inconsolata:wght@300;500&family=Inter:wght@300;400;500;700&family=Montserrat:ital@0;1&family=Oswald&family=Outfit:wght@700&family=Rubik+Dirt&display=swap" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header_img" src="./img/logos/transpdev.png" alt="computer logo">
+        <h1 class="header_title">Adrian Donate</h1>
+        <hr class="line">
+        <h2 class="header_subtitle">Software Developer</h2>
+        <video class="header_video" autoplay loop muted>
+            <source src="./video/hero.mp4" />
+        </video>
+    </header>
+    <nav id="navbar" class="nav">
+      <div class="nav_div">
+        <a class="nav_div--a" href="/">
+            <img src="./img/logos/small.png" class="circle" alt="computer logo ">
+            <span class="nav_div--span">Adrian Donate <small>Software Engineer</small></span>
+        </a>
+        <button id="hamburger" class="nav_btn">☰</button>
+      </div>  
+      <ul id="nav-ul" class="nav_ul">
+        <li class="nav_ul--li"><a class="nav_ul--a" href="#portfolio">Portfolio</a></li>
+        <li class="nav_ul--li"><a class="nav_ul--a" href="#skillset">Skillset</a></li>
+        <li class="nav_ul--li"><a class="nav_ul--a" href="#experience">Experience</a></li>
+        <li class="nav_ul--li"><a class="nav_ul--a" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+        <section id="portfolio" class="portfolio">
+            <h3 class="portfolio_title">Portfolio</h3>
+            <hr class="line">
+            <div class="portfolio_images">
+                <button class="portfolio_btn">
+                      <img class="portfolio_img" src="./img/portfolio/1.png" alt="">
+                      <h4 class="portfolio_sub">Bookkeeping</h4>
+                </button>
+                <button class="portfolio_btn">
+                      <img class="portfolio_img" src="./img/portfolio/2.png" alt="">
+                      <h4 class="portfolio_sub">Web</h4>
+                </button>
+                <button class="portfolio_btn">
+                      <img class="portfolio_img" src="./img/portfolio/3.png" alt="">
+                      <h4 class="portfolio_sub">Developer</h4>
+                </button>
+            </div>
+        </section>
+        <section id="skillset" class="even">
+            <h3>Skillset</h3>
+            <hr>
+            <div>
+                <div>
+                    <img src="./img/skillset/html.svg" alt="html logo">
+                    <span class="tooltip">HTML</span>
+                </div>
+                <div>
+                    <img src="./img/skillset/css.svg" alt="css logo">
+                    <span class="tooltip">CSS</span>
+                </div>
+                <div>
+                    <img src="./img/skillset/js.svg" alt="javascript logo">
+                    <span class="tooltip">JavaScript</span>
+                </div>
+                <div>
+                    <img src="./img/skillset/git.svg" alt="git logo">
+                    <span class="tooltip">GIT</span>
+                </div>
+                <div>
+                    <img src="./img/skillset/npm.svg" alt="npm logo">
+                    <span class="tooltip">NPM</span>
+                </div>
+                <div>
+                    <img src="./img/skillset/bash.svg" alt="bash logo">
+                    <span class="tooltip">BASH</span>
+                </div>
+                <div>
+                    <img src="./img/skillset/react.svg" alt="react logo">
+                    <span class="tooltip">REACT</span>
+                </div>
+                <div>
+                    <img src="./img/skillset/node.svg" alt="node logo">
+                    <span class="tooltip">NODE</span>
+                </div>
+            </div>
+        </section>
+        <section class="line" id="experience">
+            <h3>Experience</h3>
+            <hr>
+            <div>
+                <a href="">
+                    <img src="./img/experience/1.svg" alt="">
+                    <h4>Nintendi studio</h4>
+                </a>
+                <a href="">
+                    <img src="./img/experience/2.svg" alt="">
+                    <h4>Meta studio</h4>
+                </a>
+            </div>
+        </section>
+        <section id="contact">
+            <h3>Contact</h3>
+            <form action="https://formspree.io/f/mwkgadoz" method="POST">
+                <label>
+                    Your email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
+            <nav id="">
+                <a href="https://github.com/DFAdrian" target="_blank">
+                    <img src="./img/social/github.png" alt="github logo">
+                </a>
+                <a href="https://www.linkedin.com/in/adrian-donate-96b993217/" target="_blank">
+                    <img src="./img/social/linkedin.png" alt="linkedin logo">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="./img/social/youtube.png" alt="github logo">
+                </a>
+            </nav>
+        </section>
+    </main>
+    <footer></footer>
+    <script>
+        document.getElementById('hamburger').addEventListener('click',()=>{
+            document.getElementById('nav-ul').classList.toggle('nav_open')
+        })
+    </script>
+</body>
+</html>
